@@ -1014,8 +1014,8 @@
                         <td>' + (feature.properties['Menjangkau'] !== null ? autolinker.link(feature.properties['Menjangkau'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Foto</strong><br />' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
-                    </tr>\
+                        <td colspan="2"><strong>Foto</strong><br />' + (feature.properties['Foto'] !== null ? '<img src="images/' + String(feature.properties['Foto']).replace(/[\\\/:]/g, '_').trim() + '">' : '' dengan
+.trim() + '" '+ 'class=popupImage' +'>' : ''
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
